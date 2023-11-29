@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+        th, td {
+            border: none;
+            padding: 8px;
+            text-align: left;
+        }
+    
+        img {
+            vertical-align: middle; /* Align the image vertically in the middle of the text */
+            margin-right: 8px; /* Add some margin to the right of the image for spacing */
+        }
+    </style>
+
+
+<div class="main_container">
+
+    <div class="left-signin">
+
+        <div class="main_heading">Stay Updated</div>
+
+        <div class="main_heading_desc">Join 60,000+ product managers receiving monthly updates on:</div>
+
+        <div class="main_list">
+            <table>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td class="txt"> <img src="assets/images/icon-list.svg">  Product discovery and building what matters</td>
+                </tr>
+                <tr>
+                    <td class="txt">  <img src="assets/images/icon-list.svg"> Measuring to ensure updates are a success</td>
+                </tr>
+                <tr>
+                    <td class="txt">  <img src="assets/images/icon-list.svg"> And much more!</td>
+                </tr>
+            </table>
+        </div>
+
+       
+      
+
+        <div class="mail_small">
+            Email Address <br>
+            <input class="mail" type="email" id="emailInput" placeholder="email@company.com" required><br>
+            <button class="subs" onclick="showPopup()">Subscribe to our monthly Newsletter</button>
+            <p id="errorMessage" class="error-message" style="display: none;">Please enter a valid email address.</p>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <div class="right_img">
+        <img src="assets/images/illustration-sign-up-desktop.svg">
+    </div>
+
+</div>
+
+
+  
+
+
+    <div class="popupsuccess_container" id="popupContainer">
+        <div> <img src="assets/images/icon-success.svg"> </div> 
+        <div id="sub_head">Thanks for subscribing to our newsletter</div>
+        <div class="thanks_txt">A confirmation email has been sent to <span id="popupEmail"></span>,Please open your email and confirm your subscription.</div>
+        <button onclick="hidePopup()" class="dismiss">Dismiss Message</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
